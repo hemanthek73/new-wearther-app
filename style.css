@@ -1,0 +1,175 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;700&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  background-image: url('noaa-0ETSZYPjvDo-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+.container{
+  padding: 20px 70px;
+  padding-top: 20px;
+  color:white;
+
+}
+.current-info{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.date-container{
+  font-weight: 100;
+}
+.date-container .time{
+  font-size: 70px;
+  font-weight: 100;
+}
+.date-container #am-pm{
+  font-size: 30px;
+  margin-left: 20px;
+}
+.date-container .date{
+  font-size: 30px;
+}
+.place-container{
+  text-align: end;
+}
+.place-container .time-zone{
+  font-size: 30px;
+  font-weight: 100;
+}
+.place-container .country{
+  font-size: 12px;
+  font-weight: 700;
+
+}
+.current-info .others{
+  display: flex;
+  flex-direction: column;
+  background: rgba(24,24,27,0.6);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px 0px;
+  border: 1px solid #eee;
+}
+.current-info .others .weather-item{
+  display: flex;
+  justify-content: space-between;
+}
+.future-forcast{
+  background: rgba(24,24,27,0.8);
+  padding: 25px;
+  position: fixed;
+  bottom: 0%;
+  display: flex;
+  color:white;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.future-forcast .today{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.future-forcast .today .day{
+  padding: 5px 15px;
+  background:#3c3c44 ;
+  border-radius:50px ;
+  text-align: center;
+}
+.future-forcast .today .temp{
+  font-size: 20px;
+  padding: 15px;
+}
+.future-forcast .weather-forcast{
+  display: flex;
+}
+.weather-forcast .weather-forcast-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 10px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding:15px ;
+
+}
+.weather-forcast-item .date{
+  padding: 5px 15px;
+  background: #3c3c44;
+  border-radius: 50px;
+  text-align: center;
+}
+.weather-forcast .weather-forcast-item .temp{
+  font-size: 100;
+}
+@media only screen and (max-width:730px) {
+  .future-forcast{
+    justify-content: start;
+  align-items: none;
+  overflow-y: scroll;
+  }
+  .container{
+    padding:20px;
+  
+  }
+  .today{
+    border: 1px solid #eee;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  
+  .future-forcast .today .temp{
+    font-size: 23px;
+   
+  }
+  .date-container .time{
+    font-size:50px;
+  }
+  .date-container #am-pm{
+    font-size: 20px;
+  }
+  .date-container .date{
+    font-size:20px;
+  }
+  .place-container{
+    text-align: end;
+    margin-top: 15px;
+  }
+  .place-container .time-zone{
+    font-size: 20px;
+  }
+  .current-info .others{
+    padding: 12px;
+  }
+  .current-info .others .weather-item{
+    font-size: 14px;
+  }
+}
+/* // function getData(){
+  //   const city="america";
+  //   const url="https://api.openweathermap.org/data/2.5/weather?q="+ city +
+  //   "&units=metric&appid=e531ee07e71dc861807f7d9d983641e2";
+  //   fetch(url)
+  //   .then((res) =>res.json())
+  //   .then((data) =>{
+  //       console.log(data);
+       
+        
+   
+  //   });
+    
+  // }
+  
+  // getData(); */
