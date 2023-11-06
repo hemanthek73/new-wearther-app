@@ -16,27 +16,24 @@
         <div class="date" id="date">
           Monday,24 may
         </div>
-        <div class="others" id="current-weather-items">
-          <div class="weather-item">
-            <div>Humidity</div>
-            <div>95.25%</div>
-          </div>
-          <div class="weather-item">
-            <div>Pressure</div>
-            <div>121</div>
-          </div>
-          <div class="weather-item">
-            <div>Wind speed</div>
-            <div>222</div>
-          </div>
-          
+        <div class="currentwe">
+        <input type="text" id="city" placeholder="Enter City Name"/>
+        <br/>
+        <div class="weather">
+          <img src="https://openweathermap.org/img/wn/10d@2x.png "alt="weather icon" class="weather-icon" style="width: 75px;padding-bottom:-10px;">
         </div>
+          <div class="current"> <span id="currentweather"> current weather</span>
+        </div> 
+            <button class="action" Onclick="getData()" >GET DETAILS</button>
+          </div>
+    </div>
 
-      </div>
+      
       <div class="place-container">
         <div class="time-zone" id="time-zone">Asia/Karnataka</div>
         <div class="country" id="country">India</div>
       </div>
+    </div>
     </div>
   
 
@@ -45,43 +42,50 @@
   <div class="today" id="current-temp">
     <img src="https://openweathermap.org/img/wn/10d@2x.png "alt="weather icon" class="weather-icon">
     <div class="others">
+      <div class="day">Hassan</div>
 
-      <div class="day">Monday</div>
-      <div class="temp">Night - 25.6&#176;c</div>
-      <div class="temp">Day - 35.6&#176;c</div>
+      <div id="hassan" >temp - 25.6</div>
+      <div id="hassandis">climate-rain</div>
+      <div id="hassanhum">humidity-99</div>
     </div>
   </div>
   <div class="weather-forcast" id="weather-forcast">
     <div class="weather-forcast-item">
-      <div class="day">Tue</div>
+      <div class="day">Bangalore</div>
       <img src="https://openweathermap.org/img/wn/10d@2x.png " alt="weather icon" class="weather-icon">
-      <div class="temp">Night - 25.6&#176;c</div>
-      <div class="temp">Day - 35.6&#176;c</div>
+      <div id="bangalore">temp - 25.6&#176;c</div>
+      <div id="bangaloredis">climate - cloudc</div>
+      <div id="bangalorehum">humidity-99</div>
     </div>
     <div class="weather-forcast-item">
-      <div class="day">Wed</div>
+      <div class="day">Mysore</div>
       <img src="https://openweathermap.org/img/wn/10d@2x.png " alt="weather icon" class="weather-icon">
-      <div class="temp">Night - 25.6&#176;c</div>
-      <div class="temp">Day - 35.6&#176;c</div>
+      <div id="mysore">temp - 25.6&#176;c</div>
+      <div id="mysoredis">climate -cloud</div>
+      <div id="mysorehum">humidity-99</div>
     </div>
     <div class="weather-forcast-item">
-      <div class="day">Thu</div>
+      <div class="day">Mangalore</div>
       <img src="https://openweathermap.org/img/wn/10d@2x.png " alt="weather icon" class="weather-icon">
-      <div class="temp">Night - 25.6&#176;c</div>
-      <div class="temp">Day - 35.6&#176;c</div>
+      <div id="mangalore">temp -22&#176;c</div>
+      <div id="mangaloredis">climate - rain</div>
+      <div id="mangalorehum">humidity-99</div>
     </div>
     <div class="weather-forcast-item">
-      <div class="day">Fri</div>
+      <div class="day">Madikeri</div>
       <img src="https://openweathermap.org/img/wn/10d@2x.png " alt="weather icon" class="weather-icon">
-      <div class="temp">Night - 25.6&#176;c</div>
-      <div class="temp">Day - 35.6&#176;c</div>
+      <div id="shivmogga">temp - 25.6&#176;c</div>
+      <div id="shivmoggadis">climate -rain</div>
+      <div id="shivmoggahum">humidity-99</div>
     </div>
     <div class="weather-forcast-item">
-      <div class="day">Sat</div>
+      <div class="day">Delhi</div>
       <img src="https://openweathermap.org/img/wn/10d@2x.png " alt="weather icon" class="weather-icon">
-      <div class="temp">Night - 25.6&#176;c</div>
-      <div class="temp">Day - 35.6&#176;c</div>
+      <div id="delhi">temp - 25.6&#176;c</div>
+      <div id="delhidis">climate -thunder</div>
+      <div id="delhihum">humidity-99</div>
     </div>
+    
     
   </div>
 </div>
